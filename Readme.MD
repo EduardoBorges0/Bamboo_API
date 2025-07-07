@@ -1,6 +1,6 @@
 # 🛒 Bamboo API - Java Spring Boot
 
-Este projeto é uma API REST desenvolvida em **Java com Spring Boot**, que simula um sistema de gerenciamento de produtos para supermercados.
+Este projeto é uma API REST desenvolvida em **Java com Spring Boot**, que servira para um app pessoal que futuramente postarei na Play Store.
 
 ## 🚀 Tecnologias utilizadas
 
