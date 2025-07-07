@@ -27,7 +27,7 @@ public class UserAuthUserCase {
         Optional<UserEntity> optionalUser = userRepositories.findByEmail(email);
 
         if (optionalUser.isEmpty()) {
-            return ResponseEntity.badRequest().body("Email ou senha inválidos");
+            return ResponseEntity.badRequest().body("Email or Password invalid");
         }
 
         AuthUserDTO authUserDTOMapper = userAuthMapper.toDTO(optionalUser.get());
@@ -36,7 +36,7 @@ public class UserAuthUserCase {
             return ResponseEntity.ok().build();
         }
 
-        return ResponseEntity.badRequest().body("Email ou senha inválidos");
+        return ResponseEntity.badRequest().body("Email or Password invalid");
     }
 
 }
