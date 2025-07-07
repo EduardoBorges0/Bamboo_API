@@ -23,9 +23,6 @@ public class AuthController {
     }
     @PostMapping("/register")
     public ResponseEntity<?> register(@RequestBody RegisterUserDTO registerUserDTO) {
-        if(registerUserDTO.getRole().isBlank()){
-            registerUserDTO.setRole(Roles.BASIC.name());
-        }
        return registerUserUseCase.invoke(registerUserDTO);
     }
 

@@ -1,5 +1,6 @@
 package com.bamboo.api.data.model;
 
+import com.bamboo.api.config.Roles;
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
@@ -12,7 +13,7 @@ public class UserEntity {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
-    private String role;
+    private String role = Roles.BASIC.name();
     private String username;
     private String email;
     private String password;
